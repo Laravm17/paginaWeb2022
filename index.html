@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffc1a539c4.js" crossorigin="anonymous"></script>
+    <title>Proyecto TPO</title>
+</head>
+<header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#galería">Galería</a></li>
+            <li><a href="#locales">Locales</a></li>
+            <li><a href="#reserva">Reservas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+<main>
+    <section>
+        <a name="home"></a>
+        <div class="imagen_home">
+            <h1>IMPERIO</h1>
+            <p><b>- CERVECERÍA ARTESANAL -</b></p>
+        </div>
+    </section>
+
+    <a name="nosotros"></a>
+    
+    <section class="nosotros">
+        <div class="contenido_ppal">
+            <p><i>Imperio</i>&nbsp nació en el barrio de Villa Crespo en 2008, cuando dos amigos se juntaron con la idea de crear la cerveza perfecta y poder compartirla en un ambiente agradable y con buena música. <br> 
+                Hoy ya se sumó el segundo local en el barrio de Cañitas, y continúa con mucha proyección a futuro.</p> 
+        </div>
+        <div class="imagen_ppal">
+            <img src="img/brindis.jpg" alt="brindis">
+        </div>
+    </section>
+
+    <a name="galería"></a>
+    
+    <section class="galería_fotos">
+        <h2>Galería de fotos</h2>
+        <br>
+        <br>
+        <div class="fotos">            
+        </div>
+    </section>
+
+    <a name="locales"></a>
+    
+    <section class="locales">        
+        <h2>Locales</h2>
+        <br>
+        <br>
+        <div class="locales_ubicación">
+            <div class="local1">
+                <h3>Cañitas</h3>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.684538235379!2d-58.43478994181375!3d-34.56952668648246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5bc3017e209%3A0x218abfb44c7ad764!2sRep%C3%BAblica%20de%20Eslovenia%201811%2C%20C1426%20CZE%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653598164601!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="local2">
+                <h3>Villa Crespo</h3>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0854557112885!2d-58.43583328767126!3d-34.59551693661646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca742edca111%3A0x29720843fca72a09!2sMalabia%20836%2C%20C1414%20DLR%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653598259676!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <a name="reserva"></a>
+    
+    <section class="reservas">
+        <div class="formulario_ppal">
+            <h2>Reservas</h2>
+            <br>
+            <p> Dejanos tus datos y nos comunicaremos con vos a la brevedad:</p>
+            <br> <br>
+            <form action="#" name="formulario" method="post">
+                <p><label for="nombre">Nombre: </label> <input type="text" id="nombre" maxlength="30"></p><br>
+                <p><label for="apellido">Apellido: </label> <input type="text" id="apellido" maxlength="30"></p><br>
+                <div class="género">
+                    <p>Género: </p>
+                    <input type="radio" name="género" id="masculino"/> Masculino  &nbsp
+                    <input type="radio" name="género" id="femenino"/> Femenino  &nbsp
+                    <input type="radio" name="género" id="otro"/> Otro
+                </div><br>
+                <p><label for="fecha">Fecha de reserva (dd/mm/yyyy): </label> <input type="text" id="fecha" maxlength="10"></p><br>
+                <p><label for="cantidad">Cantidad de personas: </label> <input type="text" id="cantidad" maxlength="2"></p><br>
+                <p><label for="email">Email: </label> <input type="email" id="email" maxlength="30"></p><br>
+                <p><input type="submit" id="btn" name="btn" value="Enviar"></p>
+            </form>
+        </div>
+    </section>
+       
+</main>
+
+<footer>
+    <div class="íconos">
+        <p><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a> &nbsp
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a> </p>
+        <br>
+        <p>Todos los derechos reservados ©2022</p>     
+    </div>
+</footer>
+
+<script>
+    (function(){
+        var formulario = document.getElementsByName('formulario')[0],
+        elementos = formulario.elements, 
+        boton = document.getElementById('btn');
+        var validarNombre = function(e){
+            if(formulario.nombre.value == 0) {
+                alert ("Completa el campo Nombre")
+                e.preventDefault();                
+            }
+        };
+        var validarApellido = function(e){
+            if(formulario.apellido.value == 0) {
+                alert ("Completa el campo Apellido")
+                e.preventDefault();                
+            }
+        };
+        var validarRadio = function(e){
+            if(formulario.género[0].checked == true || 
+            formulario.género[1].checked == true || formulario.género[2].checked == true){
+            } else {
+                alert ("Completa el campo Género")
+                e.preventDefault();
+            }
+        };
+        var validarFecha = function(e){
+            if(formulario.fecha.value == 0) {
+                alert ("Completa el campo Fecha de reserva")
+                e.preventDefault();                
+            }
+        };
+        var validarCantidad = function(e){
+            if(formulario.cantidad.value == 0) {
+                alert ("Completa el campo Cantidad de personas")
+                e.preventDefault();                
+            }
+        };
+        var validarEmail = function(e){
+            if(formulario.email.value == 0) {
+                alert ("Completa el campo Email")
+                e.preventDefault();                
+            }
+        };
+        var validar = function(e){
+            validarNombre(e);
+            validarApellido(e);
+            validarRadio(e);
+            validarFecha(e);
+            validarCantidad(e);
+            validarEmail(e);
+        }
+        formulario.addEventListener('submit', validar);
+    }())
+</script>
+</body>
+</html>
